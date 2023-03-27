@@ -1,0 +1,11 @@
+.bg-red{
+     background-color: crimson;
+}
+
+.color-red{
+     color: crimson;
+}
+
+input, select{
+     border-color: crimson !important;
+}

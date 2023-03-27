@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./assets/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <title>js-biglietto-treno-form</title>
+</head>
+<body class="bg-red">
+     
+     <div class="container text-center mt-3">
+
+          <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+          <div class="bg-white rounded-3 p-3 m-3 shadow">
+
+               <div class="d-flex justify-content-around pb-4">
+                    <div class="mb-3">
+                         <label for="nomeCognome" class="form-label color-red"><strong>Nome e Cognome</strong> </label>
+                         <input type="text" class="form-control" id="nomeCognome" value="">
+                    </div>
+               
+                    <div class="mb-3">
+                         <label for="numeroKilometri" class="form-label color-red"><strong>Km da percorrere</strong> </label>
+                         <input type="number" class="form-control" id="numeroKilometri" value="">
+                    </div>
+               
+                    <div class="mb-3">
+                         <label for="eta" class="form-label color-red"><strong>Fascia d'età</strong> </label>
+                         <select class="form-select" aria-label="Default select example" id="eta" value="">
+                              <option value="minorenne">Minorenne</option>
+                              <option value="maggiorenne">Maggiorenne</option>
+                              <option value="over">Over 65</option>
+                         </select>
+                    </div>
+
+               </div>
+               
+               <span>
+                    <button type="submit" class="btn btn-secondary text-danger" value="Submit" onclick="invioDati()"><strong>Genera</strong> </button>
+               </span>
+               
+               <span>
+                    <button type="reset" class="btn btn-secondary text-danger" value="Reset" onclick="svuota()"><strong>Annulla</strong></button>
+               </span>
+               
+          </div>
+          
+          <h1 class="text-white">IL TUO BIGLIETTO</h1>
+
+          <div class="bg-white p-3">
+
+               <h2 class="text-start">DETTAGIO PASSEGGERI</h2>
+
+               <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <h2>NOME PASSEGGERO</h2>
+                        <h3></h3>
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body row">
+                          <div class="col-3">
+                              <h4>Offerta</h4>
+                              <span></span>
+                          </div>
+                          <div class="col-3">
+                              <h4>Carrozza</h4>
+                              <span></span>
+                          </div>
+                          <div class="col-3">
+                              <h4>Codice CP</h4>
+                              <span></span>
+                          </div>
+                          <div class="col-3">
+                              <h4>Costo biglietto</h4>
+                              <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+          
+          </div>
+     </div>
+
+     <script src="./assets/main.js"></script>
+</body>
+</html>
